@@ -1,11 +1,11 @@
 import express from "express";
-import multer from "multer";
-import { v2 as cloudinary } from "cloudinary";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
+import multer from "multer";
 import cors from "cors";
-import { connectDB } from "./db.js";
-import Car from "./models/car.js";
+import { v2 as cloudinary } from "cloudinary";
 import { v4 as uuidv4 } from "uuid";
+import { connectDB } from "./db.js";
 
 dotenv.config();
 const app = express();
