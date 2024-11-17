@@ -9,7 +9,7 @@ import Car from "./models/car.mjs";
 
 dotenv.config();
 const app = express();
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://cma-sandy.vercel.app" }));
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
